@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45EA36F61AF471D700764C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA36F51AF471D700764C15 /* AppDelegate.swift */; };
+		45EA36F81AF471D700764C15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA36F71AF471D700764C15 /* ViewController.swift */; };
+		45EA36FB1AF471D700764C15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EA36F91AF471D700764C15 /* Main.storyboard */; };
+		45EA36FD1AF471D700764C15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EA36FC1AF471D700764C15 /* Images.xcassets */; };
+		45EA37001AF471D700764C15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45EA36FE1AF471D700764C15 /* LaunchScreen.xib */; };
+		45EA370C1AF471D700764C15 /* OnSaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA370B1AF471D700764C15 /* OnSaleTests.swift */; };
+		45EA371E1AF4722100764C15 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA371D1AF4722100764C15 /* InterfaceController.swift */; };
+		45EA37221AF4722100764C15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EA37211AF4722100764C15 /* Images.xcassets */; };
+		45EA37261AF4722100764C15 /* Thriftee WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 45EA37251AF4722100764C15 /* Thriftee WatchKit App.app */; };
+		45EA372E1AF4722100764C15 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EA372C1AF4722100764C15 /* Interface.storyboard */; };
+		45EA37301AF4722100764C15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EA372F1AF4722100764C15 /* Images.xcassets */; };
+		45EA37331AF4722100764C15 /* Thriftee WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 45EA37191AF4722100764C15 /* Thriftee WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		45EA373C1AF4746100764C15 /* AddSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA373B1AF4746100764C15 /* AddSaleViewController.swift */; };
+		45EA37401AF4747800764C15 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA373F1AF4747800764C15 /* FinalViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45EA37061AF471D700764C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45EA36E81AF471D700764C15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45EA36EF1AF471D700764C15;
+			remoteInfo = OnSale;
+		};
+		45EA37271AF4722100764C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45EA36E81AF471D700764C15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45EA37241AF4722100764C15;
+			remoteInfo = "OnSale WatchKit App";
+		};
+		45EA37311AF4722100764C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45EA36E81AF471D700764C15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45EA37181AF4722100764C15;
+			remoteInfo = "OnSale WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45EA373A1AF4722100764C15 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				45EA37331AF4722100764C15 /* Thriftee WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		45EA36F01AF471D700764C15 /* Thriftee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thriftee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EA36F41AF471D700764C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45EA36F51AF471D700764C15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45EA36F71AF471D700764C15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45EA36FA1AF471D700764C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45EA36FC1AF471D700764C15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45EA36FF1AF471D700764C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		45EA37051AF471D700764C15 /* ThrifteeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThrifteeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EA370A1AF471D700764C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45EA370B1AF471D700764C15 /* OnSaleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnSaleTests.swift; sourceTree = "<group>"; };
+		45EA37191AF4722100764C15 /* Thriftee WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Thriftee WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EA371C1AF4722100764C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45EA371D1AF4722100764C15 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		45EA37211AF4722100764C15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45EA37251AF4722100764C15 /* Thriftee WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thriftee WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EA372B1AF4722100764C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45EA372D1AF4722100764C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		45EA372F1AF4722100764C15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45EA373B1AF4746100764C15 /* AddSaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSaleViewController.swift; sourceTree = "<group>"; };
+		45EA373F1AF4747800764C15 /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45EA36ED1AF471D700764C15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EA37021AF471D700764C15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EA37161AF4722100764C15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45EA36E71AF471D700764C15 = {
+			isa = PBXGroup;
+			children = (
+				45EA36F21AF471D700764C15 /* Thriftee */,
+				45EA37081AF471D700764C15 /* ThrifteeTests */,
+				45EA371A1AF4722100764C15 /* Thriftee WatchKit Extension */,
+				45EA37291AF4722100764C15 /* Thriftee WatchKit App */,
+				45EA36F11AF471D700764C15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45EA36F11AF471D700764C15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45EA36F01AF471D700764C15 /* Thriftee.app */,
+				45EA37051AF471D700764C15 /* ThrifteeTests.xctest */,
+				45EA37191AF4722100764C15 /* Thriftee WatchKit Extension.appex */,
+				45EA37251AF4722100764C15 /* Thriftee WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45EA36F21AF471D700764C15 /* Thriftee */ = {
+			isa = PBXGroup;
+			children = (
+				45EA36F51AF471D700764C15 /* AppDelegate.swift */,
+				45EA36F71AF471D700764C15 /* ViewController.swift */,
+				45EA36F91AF471D700764C15 /* Main.storyboard */,
+				45EA36FC1AF471D700764C15 /* Images.xcassets */,
+				45EA36FE1AF471D700764C15 /* LaunchScreen.xib */,
+				45EA36F31AF471D700764C15 /* Supporting Files */,
+			);
+			name = Thriftee;
+			path = OnSale;
+			sourceTree = "<group>";
+		};
+		45EA36F31AF471D700764C15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45EA36F41AF471D700764C15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45EA37081AF471D700764C15 /* ThrifteeTests */ = {
+			isa = PBXGroup;
+			children = (
+				45EA370B1AF471D700764C15 /* OnSaleTests.swift */,
+				45EA37091AF471D700764C15 /* Supporting Files */,
+			);
+			name = ThrifteeTests;
+			path = OnSaleTests;
+			sourceTree = "<group>";
+		};
+		45EA37091AF471D700764C15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45EA370A1AF471D700764C15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45EA371A1AF4722100764C15 /* Thriftee WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				45EA371D1AF4722100764C15 /* InterfaceController.swift */,
+				45EA373B1AF4746100764C15 /* AddSaleViewController.swift */,
+				45EA373F1AF4747800764C15 /* FinalViewController.swift */,
+				45EA37211AF4722100764C15 /* Images.xcassets */,
+				45EA371B1AF4722100764C15 /* Supporting Files */,
+			);
+			name = "Thriftee WatchKit Extension";
+			path = "OnSale WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		45EA371B1AF4722100764C15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45EA371C1AF4722100764C15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45EA37291AF4722100764C15 /* Thriftee WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				45EA372C1AF4722100764C15 /* Interface.storyboard */,
+				45EA372F1AF4722100764C15 /* Images.xcassets */,
+				45EA372A1AF4722100764C15 /* Supporting Files */,
+			);
+			name = "Thriftee WatchKit App";
+			path = "OnSale WatchKit App";
+			sourceTree = "<group>";
+		};
+		45EA372A1AF4722100764C15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45EA372B1AF4722100764C15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45EA36EF1AF471D700764C15 /* Thriftee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45EA370F1AF471D700764C15 /* Build configuration list for PBXNativeTarget "Thriftee" */;
+			buildPhases = (
+				45EA36EC1AF471D700764C15 /* Sources */,
+				45EA36ED1AF471D700764C15 /* Frameworks */,
+				45EA36EE1AF471D700764C15 /* Resources */,
+				45EA373A1AF4722100764C15 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45EA37321AF4722100764C15 /* PBXTargetDependency */,
+			);
+			name = Thriftee;
+			productName = OnSale;
+			productReference = 45EA36F01AF471D700764C15 /* Thriftee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45EA37041AF471D700764C15 /* ThrifteeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45EA37121AF471D700764C15 /* Build configuration list for PBXNativeTarget "ThrifteeTests" */;
+			buildPhases = (
+				45EA37011AF471D700764C15 /* Sources */,
+				45EA37021AF471D700764C15 /* Frameworks */,
+				45EA37031AF471D700764C15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45EA37071AF471D700764C15 /* PBXTargetDependency */,
+			);
+			name = ThrifteeTests;
+			productName = OnSaleTests;
+			productReference = 45EA37051AF471D700764C15 /* ThrifteeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45EA37181AF4722100764C15 /* Thriftee WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45EA37371AF4722100764C15 /* Build configuration list for PBXNativeTarget "Thriftee WatchKit Extension" */;
+			buildPhases = (
+				45EA37151AF4722100764C15 /* Sources */,
+				45EA37161AF4722100764C15 /* Frameworks */,
+				45EA37171AF4722100764C15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45EA37281AF4722100764C15 /* PBXTargetDependency */,
+			);
+			name = "Thriftee WatchKit Extension";
+			productName = "OnSale WatchKit Extension";
+			productReference = 45EA37191AF4722100764C15 /* Thriftee WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		45EA37241AF4722100764C15 /* Thriftee WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45EA37341AF4722100764C15 /* Build configuration list for PBXNativeTarget "Thriftee WatchKit App" */;
+			buildPhases = (
+				45EA37231AF4722100764C15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Thriftee WatchKit App";
+			productName = "OnSale WatchKit App";
+			productReference = 45EA37251AF4722100764C15 /* Thriftee WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45EA36E81AF471D700764C15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Ruben.Codes;
+				TargetAttributes = {
+					45EA36EF1AF471D700764C15 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					45EA37041AF471D700764C15 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 45EA36EF1AF471D700764C15;
+					};
+					45EA37181AF4722100764C15 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = FG7AYYTX96;
+					};
+					45EA37241AF4722100764C15 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = FG7AYYTX96;
+					};
+				};
+			};
+			buildConfigurationList = 45EA36EB1AF471D700764C15 /* Build configuration list for PBXProject "Thriftee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45EA36E71AF471D700764C15;
+			productRefGroup = 45EA36F11AF471D700764C15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45EA36EF1AF471D700764C15 /* Thriftee */,
+				45EA37041AF471D700764C15 /* ThrifteeTests */,
+				45EA37181AF4722100764C15 /* Thriftee WatchKit Extension */,
+				45EA37241AF4722100764C15 /* Thriftee WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45EA36EE1AF471D700764C15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EA36FB1AF471D700764C15 /* Main.storyboard in Resources */,
+				45EA37001AF471D700764C15 /* LaunchScreen.xib in Resources */,
+				45EA36FD1AF471D700764C15 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EA37031AF471D700764C15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EA37171AF4722100764C15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EA37261AF4722100764C15 /* Thriftee WatchKit App.app in Resources */,
+				45EA37221AF4722100764C15 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EA37231AF4722100764C15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EA372E1AF4722100764C15 /* Interface.storyboard in Resources */,
+				45EA37301AF4722100764C15 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45EA36EC1AF471D700764C15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EA36F81AF471D700764C15 /* ViewController.swift in Sources */,
+				45EA36F61AF471D700764C15 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EA37011AF471D700764C15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EA370C1AF471D700764C15 /* OnSaleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EA37151AF4722100764C15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EA371E1AF4722100764C15 /* InterfaceController.swift in Sources */,
+				45EA373C1AF4746100764C15 /* AddSaleViewController.swift in Sources */,
+				45EA37401AF4747800764C15 /* FinalViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45EA37071AF471D700764C15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45EA36EF1AF471D700764C15 /* Thriftee */;
+			targetProxy = 45EA37061AF471D700764C15 /* PBXContainerItemProxy */;
+		};
+		45EA37281AF4722100764C15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45EA37241AF4722100764C15 /* Thriftee WatchKit App */;
+			targetProxy = 45EA37271AF4722100764C15 /* PBXContainerItemProxy */;
+		};
+		45EA37321AF4722100764C15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45EA37181AF4722100764C15 /* Thriftee WatchKit Extension */;
+			targetProxy = 45EA37311AF4722100764C15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45EA36F91AF471D700764C15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45EA36FA1AF471D700764C15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45EA36FE1AF471D700764C15 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45EA36FF1AF471D700764C15 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		45EA372C1AF4722100764C15 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45EA372D1AF4722100764C15 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45EA370D1AF471D700764C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45EA370E1AF471D700764C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45EA37101AF471D700764C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OnSale/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Thriftee;
+			};
+			name = Debug;
+		};
+		45EA37111AF471D700764C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OnSale/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Thriftee;
+			};
+			name = Release;
+		};
+		45EA37131AF471D700764C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OnSaleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = ThrifteeTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnSale.app/OnSale";
+			};
+			name = Debug;
+		};
+		45EA37141AF471D700764C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OnSaleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = ThrifteeTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnSale.app/OnSale";
+			};
+			name = Release;
+		};
+		45EA37351AF4722100764C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = OnSale_WatchKit_Extension;
+				INFOPLIST_FILE = "OnSale WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "Thriftee WatchKit App";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		45EA37361AF4722100764C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = OnSale_WatchKit_Extension;
+				INFOPLIST_FILE = "OnSale WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "Thriftee WatchKit App";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		45EA37381AF4722100764C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OnSale WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "Thriftee WatchKit Extension";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		45EA37391AF4722100764C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "OnSale WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "Thriftee WatchKit Extension";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45EA36EB1AF471D700764C15 /* Build configuration list for PBXProject "Thriftee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EA370D1AF471D700764C15 /* Debug */,
+				45EA370E1AF471D700764C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45EA370F1AF471D700764C15 /* Build configuration list for PBXNativeTarget "Thriftee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EA37101AF471D700764C15 /* Debug */,
+				45EA37111AF471D700764C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45EA37121AF471D700764C15 /* Build configuration list for PBXNativeTarget "ThrifteeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EA37131AF471D700764C15 /* Debug */,
+				45EA37141AF471D700764C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45EA37341AF4722100764C15 /* Build configuration list for PBXNativeTarget "Thriftee WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EA37351AF4722100764C15 /* Debug */,
+				45EA37361AF4722100764C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45EA37371AF4722100764C15 /* Build configuration list for PBXNativeTarget "Thriftee WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EA37381AF4722100764C15 /* Debug */,
+				45EA37391AF4722100764C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45EA36E81AF471D700764C15 /* Project object */;
+}
