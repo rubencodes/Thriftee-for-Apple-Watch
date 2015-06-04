@@ -10,9 +10,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Thriftee_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="0.10000000000000001" alignment="center" text="Original Price?" textAlignment="center" id="YtQ-QI-EUy">
-                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                        </label>
+                        <group width="1" height="0.10000000000000001" alignment="center" id="006-Pz-4dU">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="Original Price?" textAlignment="center" id="YtQ-QI-EUy">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
                         <group width="1" height="0.90000000000000002" alignment="left" layout="vertical" id="eSo-5E-XwY">
                             <items>
                                 <group width="1" height="0.25" alignment="left" id="1TG-7x-SoT">
@@ -79,12 +83,12 @@
                                                 <action selector="backspace" destination="AgC-eL-Hgc" id="xb4-oY-nrs"/>
                                             </connections>
                                         </button>
-                                        <button width="0.3333333" height="1" alignment="left" title="0" id="AkC-D5-0AP">
+                                        <button width="0.3333333" height="1" alignment="center" title="0" id="AkC-D5-0AP">
                                             <connections>
                                                 <action selector="zero" destination="AgC-eL-Hgc" id="aXB-Tz-d42"/>
                                             </connections>
                                         </button>
-                                        <button width="0.3333333" height="1" alignment="center" verticalAlignment="bottom" title="Sale" id="ceP-Vl-ztI">
+                                        <button width="0.3333333" height="1" alignment="right" verticalAlignment="bottom" title="Sale" id="ceP-Vl-ztI">
                                             <color key="backgroundColor" red="0.89411764709999997" green="0.25882352939999997" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="addSaleTransition" destination="AgC-eL-Hgc" id="zSa-Ph-cZm"/>
@@ -96,7 +100,7 @@
                         </group>
                     </items>
                     <connections>
-                        <outlet property="OriginalCostLabel" destination="YtQ-QI-EUy" id="JKf-Cx-tbt"/>
+                        <outlet property="OriginalCostLabel" destination="YtQ-QI-EUy" id="Em0-Qe-CIV"/>
                     </connections>
                 </controller>
             </objects>
@@ -105,7 +109,7 @@
         <!--AddSaleViewController-->
         <scene sceneID="d2R-Mh-ClF">
             <objects>
-                <controller identifier="AddSaleViewController" id="ajE-a9-Q5E" customClass="AddSaleViewController" customModule="OnSale_WatchKit_Extension">
+                <controller identifier="AddSaleViewController" id="ajE-a9-Q5E" customClass="AddSaleViewController" customModule="Thriftee_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="hFS-lQ-cNm">
                             <items>
@@ -219,7 +223,7 @@
         <!--FinalViewController-->
         <scene sceneID="azF-lG-nCQ">
             <objects>
-                <controller identifier="FinalViewController" id="M2x-Bi-elY" customClass="FinalViewController" customModule="OnSale_WatchKit_Extension">
+                <controller identifier="FinalViewController" id="M2x-Bi-elY" customClass="FinalViewController" customModule="Thriftee_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="center" text="Your new price is:" textAlignment="center" id="DfK-8F-Phj"/>
                         <label width="1" alignment="center" text="$0.00" textAlignment="center" id="Z3B-3y-2iu">

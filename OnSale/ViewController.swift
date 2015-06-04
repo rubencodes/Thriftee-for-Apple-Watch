@@ -57,7 +57,7 @@ class ViewController: UIViewController {
                 self.currentCost = max(self.currentCost*(1 - Double(discount)/100), 0)
                 var savings = (self.originalCost - self.currentCost)
                 
-                let newCostAlert = UIAlertController(title: "You've Saved \(savings.toMoney())!", message: "Your new price today is \(self.currentCost.toMoney()). Would you like to add an additional sale, or start over?", preferredStyle: UIAlertControllerStyle.Alert)
+                let newCostAlert = UIAlertController(title: "You've Saved \(savings.toMoney())!", message: "Your new price is \(self.currentCost.toMoney()). Would you like to add an additional discount, or start over?", preferredStyle: UIAlertControllerStyle.Alert)
                 
                 let startOver = UIAlertAction(title: "Start Over", style: UIAlertActionStyle.Destructive, handler: { (action) -> Void in
                     self.originalCost = 0

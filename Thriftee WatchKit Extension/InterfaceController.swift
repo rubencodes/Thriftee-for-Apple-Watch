@@ -12,7 +12,7 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet var OriginalCostLabel : WKInterfaceLabel!
-    var currentCost = 0 as Double
+    var currentCost = 0 as Double 
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)

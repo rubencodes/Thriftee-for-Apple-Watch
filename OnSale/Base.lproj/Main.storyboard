@@ -264,6 +264,7 @@
                             <constraint firstItem="L3G-SR-u3x" firstAttribute="centerY" secondItem="F8s-nC-nR2" secondAttribute="centerY" id="yaG-Xd-5O8"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="OriginalCostLabel" destination="j5k-p9-Rhp" id="xk5-XO-ot0"/>
                         <outlet property="backspaceButton" destination="Qef-Ig-mwe" id="SYt-iS-19e"/>
