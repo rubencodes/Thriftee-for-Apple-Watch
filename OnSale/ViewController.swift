@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addSale(sender: UIButton) {
-        var alert = UIAlertController(title: "Add Sale", message: "Enter the percent discount you want to add. e.g. 90 for 90%", preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "Add Sale", message: "Enter the percent discount you want to add. e.g. 90 for 90%", preferredStyle: UIAlertControllerStyle.Alert)
         
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.keyboardAppearance = UIKeyboardAppearance.Dark
@@ -50,8 +50,8 @@ class ViewController: UIViewController {
         
         let addSale = UIAlertAction(title: "Add", style: UIAlertActionStyle.Default, handler: {
             (action) -> Void in
-            let textField = alert.textFields!.first as! UITextField
-            if let discount = textField.text.toInt() {
+            let textField = alert.textFields!.first as UITextField!
+            if let discount = Int(textField.text!) {
                 alert.dismissViewControllerAnimated(true, completion: nil)
                 
                 self.currentCost = max(self.currentCost*(1 - Double(discount)/100), 0)

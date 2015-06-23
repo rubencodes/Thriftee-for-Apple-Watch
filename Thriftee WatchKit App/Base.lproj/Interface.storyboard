@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.17" systemVersion="15A178w" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -10,97 +10,37 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Thriftee_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="0.10000000000000001" alignment="center" id="006-Pz-4dU">
+                        <group alignment="left" layout="vertical" id="xyj-PD-iV8">
                             <items>
-                                <label width="1" height="1" alignment="left" text="Original Price?" textAlignment="center" id="YtQ-QI-EUy">
+                                <label width="1" alignment="left" text="Original Price?" textAlignment="center" id="YtQ-QI-EUy">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
-                            </items>
-                        </group>
-                        <group width="1" height="0.90000000000000002" alignment="left" layout="vertical" id="eSo-5E-XwY">
-                            <items>
-                                <group width="1" height="0.25" alignment="left" id="1TG-7x-SoT">
+                                <group width="1" height="0.90000000000000002" alignment="left" id="eSo-5E-XwY">
                                     <items>
-                                        <button width="0.3333333" height="1" alignment="left" title="1" id="JMw-5d-hqw">
+                                        <picker width="0.59999999999999998" height="60" alignment="left" focusStyle="sequence" id="cpi-xS-eOr">
                                             <connections>
-                                                <action selector="one" destination="AgC-eL-Hgc" id="onS-MS-aoj"/>
+                                                <action selector="dollarsChanged:" destination="AgC-eL-Hgc" id="Glj-iy-Jf6"/>
                                             </connections>
-                                        </button>
-                                        <button width="0.3333333" height="1" alignment="left" title="2" id="Xd9-Qg-0Ub">
+                                        </picker>
+                                        <picker width="0.40000000000000002" height="60" alignment="right" focusStyle="sequence" id="taM-Dg-IYc">
                                             <connections>
-                                                <action selector="two" destination="AgC-eL-Hgc" id="Pxd-jQ-9gj"/>
+                                                <action selector="centsChanged:" destination="AgC-eL-Hgc" id="kKX-75-gtu"/>
                                             </connections>
-                                        </button>
-                                        <button width="0.3333333" height="1" alignment="left" title="3" id="00g-nd-UeU">
-                                            <connections>
-                                                <action selector="three" destination="AgC-eL-Hgc" id="nsm-pJ-72Y"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                                <group width="1" height="0.25" alignment="left" id="nwv-4e-rEE">
-                                    <items>
-                                        <button width="0.3333333" height="1" alignment="left" title="4" id="JaO-Lc-l6p">
-                                            <connections>
-                                                <action selector="four" destination="AgC-eL-Hgc" id="9xy-Xx-WIN"/>
-                                            </connections>
-                                        </button>
-                                        <button width="0.3333333" height="1" alignment="left" title="5" id="ykN-kO-AhB">
-                                            <connections>
-                                                <action selector="five" destination="AgC-eL-Hgc" id="nbg-R8-rJf"/>
-                                            </connections>
-                                        </button>
-                                        <button width="0.3333333" height="1" alignment="left" title="6" id="XC2-b4-A8N">
-                                            <connections>
-                                                <action selector="six" destination="AgC-eL-Hgc" id="N3b-jL-74l"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                                <group width="1" height="0.25" alignment="left" id="SbM-cn-4sd">
-                                    <items>
-                                        <button width="0.3333333" height="1" alignment="left" title="7" id="U0Y-gV-wWZ">
-                                            <connections>
-                                                <action selector="seven" destination="AgC-eL-Hgc" id="RE3-hg-9ZW"/>
-                                            </connections>
-                                        </button>
-                                        <button width="0.3333333" height="1" alignment="left" title="8" id="cgw-oF-yU1">
-                                            <connections>
-                                                <action selector="eight" destination="AgC-eL-Hgc" id="ep6-6m-tUf"/>
-                                            </connections>
-                                        </button>
-                                        <button width="0.3333333" height="1" alignment="left" title="9" id="CiH-fV-zkU">
-                                            <connections>
-                                                <action selector="nine" destination="AgC-eL-Hgc" id="X4w-ob-ehG"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                                <group width="1" height="0.25" alignment="left" id="HGy-hh-OMo">
-                                    <items>
-                                        <button width="0.3333333" height="1" alignment="left" backgroundImage="Slice 1" id="D0U-ad-bBb">
-                                            <connections>
-                                                <action selector="backspace" destination="AgC-eL-Hgc" id="xb4-oY-nrs"/>
-                                            </connections>
-                                        </button>
-                                        <button width="0.3333333" height="1" alignment="center" title="0" id="AkC-D5-0AP">
-                                            <connections>
-                                                <action selector="zero" destination="AgC-eL-Hgc" id="aXB-Tz-d42"/>
-                                            </connections>
-                                        </button>
-                                        <button width="0.3333333" height="1" alignment="right" verticalAlignment="bottom" title="Sale" id="ceP-Vl-ztI">
-                                            <color key="backgroundColor" red="0.89411764709999997" green="0.25882352939999997" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <action selector="addSaleTransition" destination="AgC-eL-Hgc" id="zSa-Ph-cZm"/>
-                                            </connections>
-                                        </button>
+                                        </picker>
                                     </items>
                                 </group>
                             </items>
                         </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Add Sale" id="lae-as-ubG">
+                            <color key="backgroundColor" red="0.89411764709999997" green="0.25882352939999997" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addSaleTransition" destination="AgC-eL-Hgc" id="idT-jF-AsD"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
-                        <outlet property="OriginalCostLabel" destination="YtQ-QI-EUy" id="Em0-Qe-CIV"/>
+                        <outlet property="centsPicker" destination="taM-Dg-IYc" id="U3d-T9-nMa"/>
+                        <outlet property="dollarPicker" destination="cpi-xS-eOr" id="OE2-Sq-qHq"/>
                     </connections>
                 </controller>
             </objects>
@@ -113,109 +53,23 @@
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="hFS-lQ-cNm">
                             <items>
-                                <button width="1" alignment="left" title="10%" id="orZ-6K-eJu">
+                                <label width="1" alignment="left" text="Discount?" textAlignment="center" id="QVs-3S-znc"/>
+                                <picker width="1" height="80" alignment="center" id="Bmm-JT-ulP">
                                     <connections>
-                                        <action selector="ten" destination="ajE-a9-Q5E" id="Du9-qz-L8y"/>
+                                        <action selector="changeDiscount:" destination="ajE-a9-Q5E" id="CvM-zk-8t5"/>
                                     </connections>
-                                </button>
-                                <button width="1" alignment="left" title="15%" id="MUC-og-IGZ">
-                                    <connections>
-                                        <action selector="fifteen" destination="ajE-a9-Q5E" id="ynI-VV-3uZ"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="20%" id="col-Eu-fSq">
-                                    <connections>
-                                        <action selector="twenty" destination="ajE-a9-Q5E" id="v2t-tr-2XZ"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="25%" id="f5v-ux-sRd">
-                                    <connections>
-                                        <action selector="twentyfive" destination="ajE-a9-Q5E" id="yuG-ks-MuV"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="30%" id="ncE-R7-4Vs">
-                                    <connections>
-                                        <action selector="thirty" destination="ajE-a9-Q5E" id="FAv-bI-8ee"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="33%" id="BEx-Kg-5pk">
-                                    <connections>
-                                        <action selector="thirtythree" destination="ajE-a9-Q5E" id="5kU-Te-hcb"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="35%" id="MWW-BL-vBq">
-                                    <connections>
-                                        <action selector="thirtyfive" destination="ajE-a9-Q5E" id="Bpw-3T-GYo"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="40%" id="5rx-CU-fqt">
-                                    <connections>
-                                        <action selector="fourty" destination="ajE-a9-Q5E" id="OnN-uv-1u2"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="45%" id="THf-f1-kT9">
-                                    <connections>
-                                        <action selector="fourtyfive" destination="ajE-a9-Q5E" id="mFK-JQ-jJI"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="50%" id="I49-of-Ch9">
-                                    <connections>
-                                        <action selector="fifty" destination="ajE-a9-Q5E" id="vhh-6R-BfF"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="55%" id="fG7-ce-Fas">
-                                    <connections>
-                                        <action selector="fiftyfive" destination="ajE-a9-Q5E" id="e1X-hu-GgB"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="60%" id="ScG-d4-6XG">
-                                    <connections>
-                                        <action selector="sixty" destination="ajE-a9-Q5E" id="5hm-Ph-5ub"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="65%" id="Rin-Qb-gau">
-                                    <connections>
-                                        <action selector="sixtyfive" destination="ajE-a9-Q5E" id="IGC-GM-yIC"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="66%" id="54N-00-IZx">
-                                    <connections>
-                                        <action selector="sixtysix" destination="ajE-a9-Q5E" id="zD9-SY-8ec"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="70%" id="iqd-A6-MJl">
-                                    <connections>
-                                        <action selector="seventy" destination="ajE-a9-Q5E" id="vMT-bM-ylZ"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="75%" id="7EV-Ds-7fT">
-                                    <connections>
-                                        <action selector="seventyfive" destination="ajE-a9-Q5E" id="kmh-u2-LIz"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="80%" id="ZFG-wA-151">
-                                    <connections>
-                                        <action selector="eighty" destination="ajE-a9-Q5E" id="0xP-ym-IKw"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="85%" id="udK-7r-APQ">
-                                    <connections>
-                                        <action selector="eightyfive" destination="ajE-a9-Q5E" id="tc0-Il-NjU"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="90%" id="xEo-Ok-DhP">
-                                    <connections>
-                                        <action selector="ninty" destination="ajE-a9-Q5E" id="sg4-FR-bQC"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="95%" id="lms-u3-LFa">
-                                    <connections>
-                                        <action selector="nintyfive" destination="ajE-a9-Q5E" id="fXy-OV-DJB"/>
-                                    </connections>
-                                </button>
+                                </picker>
                             </items>
                         </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Next" id="Tf9-iE-Td7">
+                            <connections>
+                                <action selector="takeDiscount" destination="ajE-a9-Q5E" id="ufo-VM-2D5"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="salePicker" destination="Bmm-JT-ulP" id="I07-18-9u4"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="332" y="273.25"/>

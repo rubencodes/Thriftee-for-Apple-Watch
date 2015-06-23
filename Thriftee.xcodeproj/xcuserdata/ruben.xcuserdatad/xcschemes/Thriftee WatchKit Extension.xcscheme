@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0630"
+   LastUpgradeVersion = "0700"
    wasCreatedForAppExtension = "YES"
    version = "2.0">
    <BuildAction
@@ -15,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45EA37181AF4722100764C15"
+               BlueprintIdentifier = "4588B8431AF5E24D00EA420E"
                BuildableName = "Thriftee WatchKit Extension.appex"
                BlueprintName = "Thriftee WatchKit Extension"
                ReferencedContainer = "container:Thriftee.xcodeproj">
@@ -47,12 +47,14 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "45EA37181AF4722100764C15"
+            BlueprintIdentifier = "4588B8431AF5E24D00EA420E"
             BuildableName = "Thriftee WatchKit Extension.appex"
             BlueprintName = "Thriftee WatchKit Extension"
             ReferencedContainer = "container:Thriftee.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = ""
@@ -62,6 +64,7 @@
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
       <BuildableProductRunnable
